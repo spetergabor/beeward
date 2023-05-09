@@ -1,1 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* navbar styles */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0%;
+    padding-inline-end: 40px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    padding-left: 5%;
+}
+
+.navbar a {
+    font-size: 15px;
+    display: block-inline;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-left: 35px;
+}
+
+.navbar {
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+}
+
+
+.action_btn_belepek, .action_btn_regisztracio {
+    color: white;
+    padding: 15px 20px;
+    margin: 0 20px 0 0;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: sclae .2 ease;
+}
+
+
+.action_btn_belepek {
+    background-color: white;
+    margin-right: -25px;
+}
+
+.action_btn_regisztracio {
+    background-color: #ff0048;
+}
+
+.action_btn_belepek:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    transform: translateY(-2px);
+   }
+   
+.action_btn_regisztracio:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    transform: translateY(-2px);
+   }  
+
+/*dropdown menu */
+
+.navbar .toggle_btn {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor:  pointer;
+    display: none; 
+}
+
+li > a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+/* li > a:hover {
+    background: linear-gradient(45deg, #f06, #3cf );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+} */
+
+.dropdown_menu  {
+    position: absolute;
+    height: 0;
+    top: 70px;
+    background: #ffc30e;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+
+.dropdown_menu li {
+    position: relative;
+    display: flex;
+    color: #000;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.875rem 1.875rem;
+
+}
+
+
+.dropdown_menu.open {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    transition: .2s ease-in-out;
+}
+
+.dropdown_menu, .action_btn_belepek, .action_btn_regisztracio {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/*first section */
+
+.first {
+    background: linear-gradient(to right bottom, #ffc30e 70%, #ffffff 0%);
+    height: 100vh;
+    padding-bottom: 100px;
+
+}
+
+.firstblock {
+     position: relative;
+}
+
+h1 {
+    position: relative;
+    padding-top: 225px;
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    padding: 1% 0 3% 0;
+    font-size: 18px;
+}
+
+.action_btn_erdekel {
+    background: #000;
+    color: white;
+    padding: 15px 40px;
+    margin: 0 20px 0 0;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.action_btn_erdekel:hover {
+    color: black;
+    background-color: white;
+}
+
+.gif {
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    display: grid;
+    max-width: 150px;
+}
+
+/* second block */
+
+.second {
+    height: 700px;
+    display: grid;
+    position: relative;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.h2 {
+    position: relative;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.subtitle {
+    position: relative;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    width: 50%;
+}
+
+.motivation1 {
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftside {
+    width: 50%;
+    position: relative;
+}
+
+.leftimg {
+    position: absolute;
+    width: 300px;
+    right: 5px;
+
+}
+
+.rightside {
+    width: 50%;
+    position: relative;
+    align-items: center;
+    display: grid;
+    padding-right: 20%;
+
+}
+
+.rightside_szoveg > * {
+    width: 70%;;
+    text-align: left;
+    color: black; 
+}
+
+.rightside_szoveg > h3 {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+.rightside_szoveg > p {
+    font-size: 16px;
+}
+
+.rightside_szoveg > a {
+    text-decoration: underline;
+}
+
+/* thirdblock */ 
+
+.third {
+    height: 460px;
+    display: grid;
+    align-items: center;
+}
+
+.motivation2 {
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftside2 {
+    width: 50%;
+    position: relative;
+}
+
+.leftimg2 {
+    position: absolute;
+    width: 300px;
+    left: 5px;
+}
+
+.rightside2 {
+    width: 50%;
+    padding-left: 20%;
+    padding-right: 25px;
+    position: relative;
+    align-items: center;
+    display: grid;
+}
+
+.rightside_szoveg2 > * {
+    width: 100%;
+    text-align: right;
+    color: black; 
+}
+
+.rightside_szoveg2 > h3 {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+.rightside_szoveg2 > p {
+    font-size: 16px;
+}
+
+.rightside_szoveg2 > a {
+    text-decoration: underline;
+}
+
+/* fourthblock */ 
+
+
+.fourth {
+    height: 460px;
+    display: grid;
+}
+
+.motivation3 {
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftside3 {
+    width: 50%;
+    position: relative;
+    right: 5px;
+}
+
+.leftimg3 {
+    position: absolute;
+    width: 300px;
+    right: 5px;
+}
+
+.rightside3 {
+    width: 50%;
+    position: relative;
+    align-items: center;
+    display: grid;
+    padding-right: 20%;
+
+}
+
+.rightside_szoveg3 > * {
+    width: 70%;;
+    text-align: left;
+    color: black; 
+}
+
+.rightside_szoveg3 > h3 {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+.rightside_szoveg3 > p {
+    font-size: 16px;
+}
+
+.rightside_szoveg3 > a {
+    text-decoration: underline;
+}
+
+/* responsive design */
+
+@media (max-width: 992px) {
+    .navbar .link,
+    .navbar
+    .action_btn_belepek,
+    .action_btn_regisztracio {
+     display: none; 
+    }  
+   .navbar .toggle_btn{
+       display: block;
+   } 
+   .dropdown_menu {
+      display: block;
+
+   }
+}
+@media (min-width: 992px){
+    .dropdown_menu  { 
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .dropdown_menu {
+        width: 100vw;
+       display: flex;
+       flex-direction: column;
+       gap: 30px;
+       
+    }
+}
+
+@media (max-width: 576px){
+   .dropdown_menu {
+       width: 100vw;
+       display: flex;
+       flex-direction: column;
+       gap: 30px;
+   }
+}
