@@ -138,7 +138,7 @@ li > a {
 
 /*first section */
 
-.first {
+ .first {
     height: 100vh;
 
 }
@@ -553,6 +553,7 @@ h1 {
 .logoszoveg {
     font-family: 'Lora', serif;
     padding-bottom: 50px;
+    text-align: center;
 
 }
 
