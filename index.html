@@ -44,6 +44,9 @@
             <img src="/assets/beebot (1).gif" alt="" class="gif">
         <button class="action_btn_erdekel">Érdekel</button>
     </div>
+    <div class="parallax">
+        <img src="assets/leaf.png" id="leaf">
+        </div>
   </section>
   <section class="second">
     <div class="secondblock">
@@ -74,13 +77,9 @@
                 <h3>Ahol örömmel látnak.
                 </h3>
                 <p>Az első munkanap mindkét fél számára várakozásokkal teli.
-
                     A Beeward segíti az onboarding folyamatot, és a csapatba való beilleszkedést.
-                    
-                    Lehetne jobban kezdeni egy új környezetben, minthogy azonnal üdvözölnek és megajándékoznak a munkatársak?
-                    
-                    Tapasztalataink szerint ez az egyik legjobb módja a munkáltatói márka építésének, mely az első pillanattól megkezdődik.
-                    
+                    Lehetne jobban kezdeni egy új környezetben, minthogy azonnal üdvözölnek és megajándékoznak a munkatársak?   
+                    Tapasztalataink szerint ez az egyik legjobb módja a munkáltatói márka építésének, mely az első pillanattól megkezdődik.      
                     </p>
                 </div>
             </div>
@@ -109,6 +108,80 @@
         </div>
     </div>
   </section>
+  <section class="fifth">
+    <div class="tartalom">
+        <h2 class="tartalom-h2">Ahova jó tartozni</h2>
+        <p class="tartalom-p"><em>a Beeward világa</em></p>
+    
+    <div class="card">
+        <div class="card1">
+            <div class="cardimg1">
+            <img src="assets/bitmap@2x-1.png" alt="" class="cardimg">
+        </div>
+        <div class="cardszoveg">
+            <h3>Figyelj másokra</h3>
+        </div>
+        <div class="cardszoveg-p">
+            <p>Az egyéni motivációk megtalálása kiemelten fontos.
+                Teremtsd meg a lehetőségét annak, hogy a csapatod minden tagja anonim módon elmondhassa mire vágyik.</p>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="cardimg1">
+            <img src="assets/bitmap@2x-1.png" alt=""class="cardimg">
+        </div>
+        <div class="cardszoveg">
+            <h3>Tegyél a közös célért</h3>
+        </div>  
+        <div class="cardszoveg-p">
+            <p>Csapatban gyűjteni jó, hisz az együtt elért sikerek nagyobb boldogságot hozhatnak a cég életébe.</p>
+        </div>
+        </div>
+        <div class="card3">
+            <div class="cardimg1">
+            <img src="assets/bitmap@2x-1.png" alt=""class="cardimg">
+            </div>
+            <div class="cardszoveg">
+            <h3>Jutalmazd őket</h3>
+            </div>
+            <div class="cardszoveg-p">
+            <p>Minden csapat más. A Beeward teljes szabadságot ad a jutalmak kezelésében legyen szó egy ebédről, mozijegyről vagy céges masszázsról.</p>
+            </div>
+        </div>
+    </div>
+
+        <button class="buttoncta">15 tipp amivel motiválhatod a csapatodat</button>
+</div>
+  </section>
+  <section class="sixth">
+    <div class="urlap">
+        <h2 class="bemutato-h2">Bemutató igénylése</h2>
+        <p class="bemutato-p">Bizonyára sok kérdésed van. Igényeld 45-60 perces ingyenes bemutatónkat, hogy <br> felkészülten vághass bele csapatod motiválásába.</p>
+    <div class="cta">
+        <input type="text" id="fname" name="fname" value="Név" class="forminput"><br><br>
+        <input type="text" id="email" name="email" value="e-mail cím" class="forminput"><br><br>
+        <input type="text" id="phone" name="phone" value="Telefonszám" class="forminput"><br><br>
+    </div>
+    <button class="buttonform">elküld</button>
+    </div>
+  </section>
+  <section class="seventh">
+    <div class="logoblock">
+        <h2 class="logocim">Szuper csapatok</h2>
+        <p class="logoszoveg">Büszkék vagyunk rá, hogy az alábbi cégeket partnereink közt tudhatjuk.</p>
+    <div class="game-board">
+        <div class="box"><img src="assets/coopervision-2.png" alt="" class="logok"></div>
+        <div class="box"><img src="/assets/jobcapital-2.png" alt="" class="logok"></div>
+        <div class="box"><img src="/assets/vodafone.png" alt="" class="logok"></div>
+        <div class="box"><img src="assets/uniotech-2.png" alt="" class="logok"></div>
+        <div class="box"><img src="assets/rovitex-2.png" alt="" class="logok"></div>
+        <div class="box"><img src="assets/rati-2.png" alt="" class="logok"></div>
+        <div class="box"><img src="assets/infocomplex-1.png" alt="" class="logok"></div>
+        <div class="box"><img src="assets/coolklima-2.png" alt="" class="logok"></div>
+        <div class="box"><img src="assets/nappali-3.png" alt="" class="logok"></div>
+      </div>
+    </div>
+  </section>
 
 
     <script>
@@ -124,7 +197,16 @@
              ? 'fa-solid fa-xmark'
              : 'fa-solid fa-bars'
         }
-    </script> 
+    </script>
+     <script>
+let leaf = document.getElementById('leaf');
+
+window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+    leaf.style.top = value * -1 + 'px';
+});
+     </script>
+ 
 </main>
 </body>
 </html>
