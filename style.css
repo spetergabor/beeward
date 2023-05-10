@@ -8,6 +8,7 @@
     text-decoration: none;
 }
 
+
 /* navbar styles */
 
 .header {
@@ -15,7 +16,7 @@
     left: 0;
     width: 100%;
     padding: 20px 0%;
-    padding-inline-end: 40px;
+    padding-inline-end: 10px;
     background: #ffc30e;
     display: flex;
     justify-content: space-between;
@@ -148,6 +149,8 @@ li > a {
 
 .firstblock {
      position: relative;
+     min-height: 100%;
+
 
 }
 
@@ -239,14 +242,34 @@ h1 {
     z-index: 0;
 }
 
+/* ----------------------------------------- */
+
+@media (max-width: 576px){
+    .scrolling {
+        height: calc(100% + 600px); 
+    }
+    h1 {
+        padding-top: 50px;
+        font-size: 40px;
+        margin: 0 10px 0 10px;
+    }
+    .first {
+        margin: 0 10px 0 10px;
+
+    }
+}
+
+/* ----------------------------------------- */
+
 /* second block */
 
 .second {
-    height: 700px;
-    display: grid;
+    height: 100vh;
+    min-height: 100%;
     position: relative;
     align-items: center;
     z-index: 99;
+    margin-top: -100px;
 
 }
 
@@ -270,14 +293,16 @@ h1 {
 
 .motivation1 {
     position: relative;
-    height: 400px;
+    min-height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .leftside {
     width: 50%;
     position: relative;
+    float: left;
+    width: 50%;
 }
 
 .leftimg {
@@ -292,13 +317,12 @@ h1 {
     position: relative;
     align-items: center;
     display: grid;
-    padding-right: 20%;
+    float: left;
 
 }
 
-.rightside_szoveg > * {
-    width: 70%;;
-    text-align: left;
+.rightside_szoveg {
+    width: 70%;
     color: black; 
 }
 
@@ -314,6 +338,13 @@ h1 {
 .rightside_szoveg > a {
     text-decoration: underline;
 }
+
+/* ----------------------------------------- */
+
+
+
+/* ----------------------------------------- */
+
 
 /* thirdblock */ 
 
@@ -369,12 +400,66 @@ h1 {
     text-decoration: underline;
 }
 
+/* --------------------------------------- */
+
+@media (max-width: 576px){
+
+    .third {
+        height: 1000px;
+    }
+
+
+    .motivation2  {
+        flex-basis: 50%;
+        display: grid;
+        
+    }
+
+    .leftside2 {
+        width: 100%;
+        align-items: center;
+        display: block;
+    }
+    .leftimg2 {
+        width: 100%;
+    }
+
+    .rightside2 {
+        grid-row: 1;
+        justify-content: center;
+        width: 100%;
+        display: block;
+        margin: 0 10px 0 10px;
+
+    }
+    .rightside_szoveg2 {
+        width: 100%;
+        text-align: center;
+
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 576px) {
+    body > * {
+    flex-basis: 100%;
+    }
+    }
+
+
+
+/* --------------------------------------- */
+
+
 /* fourthblock */ 
 
 
 .fourth {
-    height: 460px;
     display: grid;
+    min-height: 100vh;
+
 }
 
 .motivation3 {
