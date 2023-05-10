@@ -16,11 +16,12 @@
     width: 100%;
     padding: 20px 0%;
     padding-inline-end: 40px;
-    background: transparent;
+    background: #ffc30e;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    position: relative;
+    z-index: 1000;
 }
 
 .logo {
@@ -138,6 +139,8 @@ li > a {
 
 /*first section */
 
+
+
  .first {
     height: 100vh;
 
@@ -145,6 +148,7 @@ li > a {
 
 .firstblock {
      position: relative;
+
 }
 
 h1 {
@@ -153,7 +157,7 @@ h1 {
     text-align: center;
     font-size: 3em;
     color: #fff;
-    z-index: 3;
+    z-index: 33;
 
 }
 
@@ -161,7 +165,8 @@ h1 {
     text-align: center;
     padding: 1% 0 3% 0;
     font-size: 18px;
-    z-index: 99;
+    z-index: 33;
+    position: relative;
 
 }
 
@@ -180,11 +185,16 @@ h1 {
     display: grid;
     justify-content: center;
     vertical-align: middle;
+    position: relative;
+    z-index: 99;
+
 }
 
 .action_btn_erdekel:hover {
     color: black;
     background-color: white;
+    z-index: 99;
+
 }
 
 .gif {
@@ -193,7 +203,10 @@ h1 {
     margin: auto;
     display: grid;
     max-width: 150px;
+    z-index: 3;
+
 }
+/*
 .parallax img {
     position: absolute;
     top: 0;
@@ -201,7 +214,29 @@ h1 {
     width: 100%;
     pointer-events: none;
     z-index: -1;
+}
+*/
+.scrolling {
+    background: linear-gradient(165deg,transparent,transparent 100vh,#fff 0,#fff);
+    height: calc(100% + 120vw);
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
 
+.hatter {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    background: #ffc40e;
+    z-index: 0;
 }
 
 /* second block */
@@ -211,6 +246,8 @@ h1 {
     display: grid;
     position: relative;
     align-items: center;
+    z-index: 99;
+
 }
 
 .h2 {

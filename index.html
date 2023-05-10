@@ -36,6 +36,9 @@
 </div>
 </header>
 <main>
+    <div class="scrolling" id="scrolling">
+    </div>
+    <div class="hatter"></div>
   <section class="first">
     <div class="firstblock">
     <h1>Jobb munkahelyi <br> kapcsolatokat építünk</h1>
@@ -44,9 +47,9 @@
             <img src="assets/beebot (1).gif" alt="" class="gif">
         <button class="action_btn_erdekel">Érdekel</button>
     </div>
-    <div class="parallax">
+    <!-- <div class="parallax">
         <img src="assets/leaf.png" id="leaf">
-        </div>
+        </div> -->
   </section>
   <section class="second">
     <div class="secondblock">
@@ -199,11 +202,11 @@
         }
     </script>
      <script>
-let leaf = document.getElementById('leaf');
+let scrolling = document.getElementById('scrolling');
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
-    leaf.style.top = value * -1 + 'px';
+    scrolling.style.top = value * -1 + 'px';
 });
      </script>
  
