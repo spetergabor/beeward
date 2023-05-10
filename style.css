@@ -218,7 +218,7 @@ h1 {
 */
 .scrolling {
     background: linear-gradient(165deg,transparent,transparent 100vh,#fff 0,#fff);
-    height: calc(100% + 200vw);
+    height: calc(100% + 100vw);
     width: 100%;
     display: block;
     position: absolute;
